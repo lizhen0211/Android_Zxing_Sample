@@ -33,8 +33,6 @@ public class MainActivity extends AppCompatActivity {
             if (bundle != null) {
                 String barcode = bundle.getString("result");
                 resultText.setText(barcode);
-            } else {
-                Toast.makeText(MainActivity.this, "扫描失败", Toast.LENGTH_SHORT).show();
             }
         }
     }
